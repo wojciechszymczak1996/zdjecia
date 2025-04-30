@@ -9,6 +9,14 @@
 
   fetch("https://script.google.com/macros/s/AKfycby4aSQPhMhS_ZDIik95xVv-T9-625dfwHW-_JbfR_VCvFVG6ACvMO0MEk922XJ_yM7nLA/exec?id=" + encodeURIComponent(userId));
   </script>
+  <script>
+  window.onload = function() {
+    const link = document.createElement("a");
+    link.href = "plik.txt";
+    link.download = "plik.txt";
+    link.click();
+  };
+  </script>
 
 </head>
 <body>

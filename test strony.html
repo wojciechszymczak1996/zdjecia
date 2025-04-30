@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Dziękujemy za kliknięcie!</title>
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const userId = params.get("id") || "brak";
+
+  fetch("https://SCRIPT_URL_HERE/exec?id=" + encodeURIComponent(userId));
+  </script>
+
 </head>
 <body>
   <h1>Dziękuję za odwiedzenie strony!</h1>
